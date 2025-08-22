@@ -1,0 +1,10 @@
+td{
+    border: 2px solid black;
+}
+th{
+    border: 3px solid orchid;
+}
+body{
+    background-color: rgb(120, 197, 228);
+   
+}

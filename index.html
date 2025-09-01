@@ -4,88 +4,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Self built Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Design this card</title>
+    <style>
+        * {
+            padding: 3px;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(173, 168, 168);
+            /* padding: 15%; */
+            display: flex;
+        }
+
+        .card {
+            background-color: rgb(154, 129, 201);
+            width: 300px;
+            height: 440px;
+            border-radius: 12px;
+            /* overflow-y: auto;
+            overflow-x: hidden; */
+            margin: 5px;
+            
+
+        }
+
+        .card img {
+            height: 180px;
+            width: 294px;
+            border-radius: 8px;
+            padding: 3px;
+        }
+
+        .capsule {
+            padding: 15px 0 13px 6vw;
+        }
+
+        .capsule span {
+            border: 2px solid black;
+            border-radius: 7px;
+            padding: 0 22px 0 22px;
+            /* syntax: top- right- bottom- left  */
+            box-shadow: 2px 2px 4px black;
+            /* text-shadow: 2px 2px 4px #ee0b0b; */
+        }
+
+        .button {
+
+            text-align: center;
+
+
+
+        }
+
+        .button button {
+            border-radius: 8px;
+            padding: 0 12px 0 12px;
+            box-shadow: 2px 2px 4px black;
+            color: rgb(83, 58, 207);
+            background-color: rgb(194, 208, 221);
+
+        }
+
+        h2 {
+            text-indent: 6px;
+            font-weight: 600;
+        }
+
+        p {
+            font-style: italic;
+            font-size: 18px;
+        }
+
+        .button :hover {
+            color: black;
+            background-color: green;
+        }
+    </style>
 </head>
 
 <body>
-    <img src="wp1.jpg" height="200" width="400" alt="bird">
-    <form action="post">
+    <div class="card">
+        <img src="Fight Night.png" alt="samurai">
 
-        <div>
 
-            <label for="father name">Enter your father's name</label>
+
+        <div class="capsule">
+            <span class="like">Like</span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="share">Share</span>
             <br>
-            <input type="text" id="father name" name="father name" placeholder="enter your father's name">
+
         </div>
-        <div>
-            <input type="radio" id="Male" name="gender" value="Male">
-            <label for="Male">male</label>
+        <div class="content">
+            <h2>Fight Night:</h2>
+            <p>Fight Night means the Night where all the high ranked Ninjas Fight to prove their skills in front of the senior ninja and the village people so that they can be selected as next dragon warrior.</p>
+
+            <div class="button">
+                <button>submit</button>
+            </div>
 
 
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">female</label>
+        </div>
+    </div>
+      <div class="card">
+        <img src="Nigga.png" alt="samurai">
 
 
-            <input type="radio" id="other" name="gender" value="other">
-            <label for="other">other</label>
-        </div><br>
-        <div>
 
-            <input type="checkbox" id="precaution" name="precaution" value="yes">
-            <label for="precaution">I have filled every details correctly</label>
-        </div><br>
-        <div>
-            <label for="state">Enter your State name:</label><br>
-            <select id="state" name="state">
-                <option value="select">select </option>
-                <option value="Assam">Assam</option>
-                <option value="Bihar">Bihar</option>
-                <option value="Karnataka">Karnataka</option>
-            </select>
-        </div><br>
-        <div>
-
-            <label for="feedback">enter the feedback:</label>
+        <div class="capsule">
+            <span class="like">Like</span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="share">Share</span>
             <br>
-            <textarea name="feedback" id="feedback" cols="40" rows="3" placeholder="Write a feedback"></textarea>
-        </div><br>
+
+        </div>
+        <div class="content">
+            <h2>Samurai:</h2>
+            <p>Samurais are the Ninja who fight in the fight night.They are extremely powerful as they are well trained by their masters and their all set to prove that they are the best in the village.</p>
+
+            <div class="button">
+                <button>submit</button>
+            </div>
 
 
-    </form>
-    <ul type="circle">
-        <li>This is just for practice</li>
-        <li>it's just a demi</li>
-        <li>I will come back harder</li>
-    </ul><br>
-    <ol type="A">
-        <h1>Tips to become pro</h1>
-        <li>start from the scratch</li>
-        <li>be patient</li>
-        <li>work hard and smart</li>
-        <li>Never give up</li>
-    </ol><br>
-    <dl>
-        <dt>Main Point</dt>
-        <ul type="">
-            <li>Nothing Iam just filling the space</li>
-            <li>Please don't take it serious</li>
-        </ul>
+        </div>
+    </div>
+  <div class="card">
+        <img src="Venom.png" alt="samurai">
 
-    </dl><br>
-    <table>
 
-        <tr>
-            <th colspan="2">Name</th>
-            <th>age</th>
-            <th>college</th>
-        </tr>
-        <tr>
-            <td colspan="2">Dhanish</td>
-            <td>18</td>
-            <td>Srinivas</td>
-        </tr>
-    </table>
+
+        <div class="capsule">
+            <span class="like">Like</span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="share">Share</span>
+            <br>
+
+        </div>
+        <div class="content">
+            <h2>Venom:</h2>
+            <p>Venom is Marvel's created fictional charater which is a symbiote.It came from another planet and lives in the planet earth attached to Eddie.They both save the world from enemy symbiotes.</p>
+
+            <div class="button">
+                <button>submit</button>
+            </div>
+
+
+        </div>
+    </div>
 </body>
-
 </html>

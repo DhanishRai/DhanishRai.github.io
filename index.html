@@ -18,19 +18,20 @@
             flex-wrap: wrap;
         }
 
+        /* 
         .card {
-            /* background-color: rgb(154, 129, 201);
+           background-color: rgb(154, 129, 201);
             width: 300px;
             height: 440px;
             border-radius: 12px;
-            /* overflow-y: auto;
-            overflow-x: hidden; */
+             overflow-y: auto;
+            overflow-x: hidden; 
             margin: 5px;
             background-color: rgb(154, 129, 201);
             width: calc(33.33% - 40px);
-            /* ✅ Exactly 3 per row */
+         
             max-width: 300px;
-            /* ✅ Don't stretch too big */
+           
             height: 440px;
             border-radius: 12px;
 
@@ -42,19 +43,50 @@
             width: 268px;
             border-radius: 8px;
             padding: 3px;
+        } */
+
+        .card {
+            background-color: rgb(154, 129, 201);
+            width: 300px;
+            height: 440px;
+            border-radius: 12px;
+            margin: 10px;
+            padding: 5px;
+            /* ✅ Even padding around all content */
+            box-sizing: border-box;
+            /* ✅ Keeps card size consistent */
         }
+
+        .card img {
+            width: 100%;
+            /* ✅ Fill full card width */
+            height: auto;
+            /* ✅ Keep proportions */
+            border-radius: 8px;
+            display: block;
+            object-fit: cover;
+            padding: 0;
+            /* ❌ Remove image padding */
+        }
+
 
         .capsule {
             padding: 15px 0 13px 6vw;
+            display: flex;
+              justify-content: center;
+               /* align-items: center; */
+                 gap: 20px;
+                   padding: 15px 0;
         }
 
         .capsule span {
             border: 2px solid black;
             border-radius: 7px;
-            padding: 0 26px 0 18px;
+            padding: 0 22px 0 22px;
             /* syntax: top- right- bottom- left  */
             box-shadow: 2px 2px 4px black;
             /* text-shadow: 2px 2px 4px #ee0b0b; */
+            
         }
 
         .button {
@@ -151,7 +183,8 @@
         </div>
         <div class="content">
             <h2>Venom:</h2>
-            <p>Venom is Marvel's created fictional charater.It came from another planet and lives in the planet earth attached to Eddie.Both save the world from enemy symbiotes.</p>
+            <p>Venom is Marvel's created fictional charater.It came from another planet and lives in the planet earth
+                attached to Eddie.Both save the world from enemy symbiotes.</p>
 
             <div class="button">
                 <button>submit</button>
@@ -198,7 +231,8 @@
         </div>
         <div class="content">
             <h2>Bird:</h2>
-            <p> Birds are warm-blooded vertebrates with feathers, wings, and beaks. They lay eggs, migrate, and play vital roles in ecosystems, symbolizing freedom, beauty and nature balance.
+            <p> Birds are warm-blooded vertebrates with feathers, wings, and beaks. They lay eggs, migrate, and play
+                vital roles in ecosystems, symbolizing freedom, beauty and nature balance.
                 They symbolize beauty of nature.
             </p>
 
